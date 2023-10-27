@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_titulo_categorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Seleccione la categoría"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+       <ImageView
+        android:id="@+id/iv_canchas"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv_titulo_categorias"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cancha" />
+
+    <TextView
+        android:id="@+id/tv_canchas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_canchas"
+        android:layout_centerHorizontal="true"
+        android:text="Canchas Deportivas"
+        android:textSize="20sp"
+        android:textColor="@color/black" />
+
+
+    <ImageView
+        android:id="@+id/iv_parques"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv_canchas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/parques" />
+
+    <TextView
+        android:id="@+id/tv_parques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_parques"
+        android:layout_centerHorizontal="true"
+        android:text="Parques"
+        android:textSize="20sp"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/iv_colegios"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv_parques"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/colegios" />
+
+    <TextView
+        android:id="@+id/tv_colegios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_colegios"
+        android:layout_centerHorizontal="true"
+        android:text="Colegios"
+        android:textSize="20sp"
+        android:textColor="@color/black" />
+
+
+
+    <ImageView
+        android:id="@+id/iv_banner_categorias"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/baner" />
+
+</RelativeLayout>

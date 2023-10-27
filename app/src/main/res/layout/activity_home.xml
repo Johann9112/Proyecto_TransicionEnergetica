@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iv_logo_inicio"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/icon"/>
+
+    <Button
+        android:id="@+id/btn_categorias"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/iv_logo_inicio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Categorías"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_estadisticas"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_categorias"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Estadísticas"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_beneficios"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_estadisticas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Beneficios"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_contactenos"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_beneficios"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Contáctenos"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+
+    <ImageView
+        android:id="@+id/iv_banner_inicio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/baner"/>
+
+</RelativeLayout>

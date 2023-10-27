@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/iv_logo_login"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/icon"/>
+
+    <EditText
+        android:id="@+id/et_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_logo_login"
+        android:layout_marginTop="40dp"
+        android:hint="Usuario"
+        android:inputType="text"
+        android:padding="10dp"/>
+
+
+    <EditText
+        android:id="@+id/et_contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_usuario"
+        android:layout_marginTop="20dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="10dp"/>
+
+
+    <Button
+        android:id="@+id/btn_ingresar_login"
+        android:layout_width="255dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/et_contraseña"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="Ingresar" />
+
+
+    <Button
+        android:id="@+id/btn_registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_below="@+id/btn_ingresar_login"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="-121dp"
+        android:layout_toLeftOf="@+id/btn_ingresar_login"
+        android:text="Registrarse" />
+
+    <Button
+        android:id="@+id/btn_recordar_contraseña"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_ingresar_login"
+        android:layout_marginLeft="-129dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/btn_ingresar_login"
+        android:text="Recordar Contraseña" />
+
+    <ImageView
+        android:id="@+id/iv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/baner"/>
+
+</RelativeLayout>

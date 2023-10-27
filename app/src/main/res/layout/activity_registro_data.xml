@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_titulo_registro_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Registro de datos de sistemas fotovoltaicos"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_nombre_sistema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_titulo_registro_data"
+        android:layout_marginTop="20dp"
+        android:hint="Nombre del sistema"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/et_ubicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_nombre_sistema"
+        android:hint="Ubicación"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/et_capacidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_ubicacion"
+        android:hint="Capacidad del sistema (kWp)"
+        android:padding="10dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/et_tipo_modulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_capacidad"
+        android:hint="Tipo de módulo"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/et_numero_paneles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_tipo_modulo"
+        android:hint="Número de paneles"
+        android:padding="10dp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/et_inversor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_numero_paneles"
+        android:hint="Inversor / Baterias"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/et_fecha_instalacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_inversor"
+        android:hint="Fecha de instalación"
+        android:padding="10dp"
+        android:inputType="date"/>
+
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_fecha_instalacion"
+        android:layout_marginTop="20dp"
+        android:text="Registrar"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/iv_banner_registro_data"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/baner" />
+
+</RelativeLayout>
