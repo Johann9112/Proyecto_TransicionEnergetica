@@ -18,7 +18,7 @@
             android:name=".recordar_pass"
             android:exported="false" />
         <activity
-            android:name=".registro_data"
+            android:name=".RegistroDataActivity"
             android:exported="false" />
         <activity
             android:name=".categorias"
@@ -27,7 +27,7 @@
             android:name=".beneficios"
             android:exported="false" />
         <activity
-            android:name=".estadisticas"
+            android:name=".EstadisticasActivity"
             android:exported="false" />
         <activity
             android:name=".home"
